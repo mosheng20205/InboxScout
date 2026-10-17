@@ -1,0 +1,48 @@
+# ── 方案 A：白名单式。除下面 `!` 列出来的，一律不进仓库 ──────────────────
+# 这么做而不是列黑名单，是因为本目录里有 130 MB 付费模块二进制、193 MB 构建产物、
+# 以及装着真人私信正文的取证输出——黑名单漏一条就是一次事故，白名单漏一条只是少个文件。
+/*
+
+!/.gitignore
+!/README.md
+!/LICENSE
+!/docs/
+!/*.lcpppkg
+
+# ── 兜底红线：即使以后有人放宽白名单，这几类也永远不进仓库 ──────────────
+# 凭据与登录态
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+creds.db
+cookies*.txt
+*.cookie
+wecom.txt
+*webhook*
+
+# 取证输出（里面有真人对端昵称与私信正文）
+dm_selftest.txt
+dm_round.txt
+dm_login.txt
+dm_qr.txt
+ui_actions.log
+sent_ledger.txt
+data.json
+*_resp.bin
+probe-web/
+chrome-profile/
+
+# IDE 与构建
+.lingbuilder-build/
+generated/
+__pycache__/
+*.pdb
+*.obj
+*.exe
+*.dll
+
+# 内部工作文档
+方案.md
+AGENTS.md
+开源发布文案.md
