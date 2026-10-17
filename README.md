@@ -52,6 +52,13 @@
 **确定性地翻译成真实 C++（Win32）**，再交给 MSVC `cl` 编成原生 x64 PE。性能、依赖面、可调试性
 都请按"这就是一个 C++ 程序"来预期。
 
+左边是写它的样子（中文结构化源码），右边是构建产物在 Visual Studio 里打开的样子
+（标准 VS 工程：`main.cpp` + 生成头 + 资源脚本）——**同一份东西的两头**：
+
+![灵码 IDE · 中文结构化源码](docs/screenshots/ide.png)
+
+![Visual Studio · 生成的 C++ 工程](docs/screenshots/vs.png)
+
 本机证据，不是宣传话术：
 
 | 看到什么 | 说明 |
