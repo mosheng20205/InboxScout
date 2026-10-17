@@ -10,13 +10,14 @@
 
 ## 界面
 
-<!-- 截图放 docs/screenshots/ 后，取消下面三行的注释即可（拍法与脱敏要求见 docs/screenshots/README.md）
-![收件箱 · 三平台混排](docs/screenshots/inbox.png)
+![收件箱 · 三平台混排 + 会话详情 + 回复发送框](docs/screenshots/inbox.png)
+
 ![会话详情 · 回复框与身份锁死](docs/screenshots/detail.png)
 ![凭据与登录 · 掩码与扫码导入](docs/screenshots/accounts.png)
--->
 
-> 截图待补。这里不放设计评审稿——那批图里是编出来的假数据，拿它当"实机截图"就是骗人。
+> 后两张待补（拍法与脱敏要求见 `docs/screenshots/README.md`）。这里不放设计评审稿——
+> 那批图里是编出来的假数据，拿它当"实机截图"就是骗人。上图是真机截图：混排列表、
+> 三平台筛选、会话详情与底部回复框（发送=真发，默认闸关时只会回 GATED 提示）。
 
 ## 能做什么
 
